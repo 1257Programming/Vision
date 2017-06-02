@@ -19,7 +19,7 @@ int main()
 	ZeroMemory(&serv_addr, sizeof(serv_addr)); // Use bzero on Linux
 
 	serv_addr.sin_family = AF_INET; // IPv4
-	serv_addr.sin_port = htons(1257);
+	serv_addr.sin_port = htons(5800);
 
 	hostent* host = gethostbyname("localhost"); // Use "10.12.57.2" on the RoboRIO, localhost is for two programs on one machine
 	//serv_addr.sin_addr.s_addr = host->h_addr;
